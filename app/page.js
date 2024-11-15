@@ -1,6 +1,7 @@
 import FullItenary from "./_components/FullItenary";
 import Gallery from "./_components/Gallery";
 import Hero from "./_components/Hero";
+import ItenaryCost from "./_components/ItenaryCost";
 import ItenaryOverview from "./_components/ItenaryOverview";
 
 export default function Home() {
@@ -11,6 +12,8 @@ export default function Home() {
       <Gallery />
 
       <FullItenary />
+
+      <ItenaryCost />
     </main>
   )
 }

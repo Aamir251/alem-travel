@@ -1,20 +1,20 @@
 import Container from "@/components/ui/Container";
 import Image from "next/image";
-import BlackLogo from "@/assets/black-logo.png"
+import BikeLogo from "@/assets/bike-logo.png"
 import ItenaryCard from "./ItenaryCard";
 import BookingSystem from "../BookingSystem";
 
 
 export default function FullItenary() {
   return (
-    <Container className={` mt-20 lg:mt-48`}>
+    <Container className={` mt-24`}>
 
-      <Image src={BlackLogo}
+      <Image src={BikeLogo}
         className="mx-auto lg:ml-0"
         alt="alem travel logo" width={110} height={120} style={{ objectFit: "contain" }} 
       />
 
-      <h2 className="text-3xl my-6">Bike Journey from Bagdogra to Thimpu</h2>
+      <h2 className="text-4xl my-6">BHUTAN RIDE</h2>
 
 
       <section className="lg:flex justify-between gap-x-10 space-y-10">
