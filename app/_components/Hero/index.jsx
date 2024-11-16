@@ -7,7 +7,7 @@ import Container from "@/components/ui/Container";
 
 export default function Hero() {
   return (
-    <section className="relative w-full h-[80vh] flex-center flex-col text-light text-center">
+    <section className="relative w-full h-[70vh] lg:h-[80vh] flex-center flex-col text-light text-center">
       <Gradient />
       <Gradient />
       
