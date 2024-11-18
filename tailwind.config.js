@@ -1,27 +1,27 @@
-/** @type {import('tailwindcss').Config} */
+
 module.exports = {
-  content: [
+    darkMode: ["class"],
+    content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      fontFamily : {
-        inter : ["var(--font-inter)"],
-        federo : ["var(--font-federo)"],
-      },
-      textColor : {
-        light : "#F6F6F6",
-        "grey-one" : "#747474"
-      },
-      colors : {
-        primary : "#018B7F",
-      },
-      backgroundColor : {
-        light : "#F3F3F3"
-      }
-    },
+  	extend: {
+  		fontFamily: {
+  			inter: ["var(--font-inter)"],
+  			federo: ["var(--font-federo)"]
+  		},
+  		textColor: {
+  			light: '#F6F6F6',
+  			'grey-one': '#747474'
+  		},
+  		colors: {
+  			primary: '#018B7F'
+  		},
+  		backgroundColor: {
+  			light: '#F3F3F3'
+  		},
+  	}
   },
-  plugins: [],
 };

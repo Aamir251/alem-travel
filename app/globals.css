@@ -31,3 +31,17 @@ body {
     transform: translateX(50%);
   }
 }
+
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+.react-calendar {
+  border: none !important;
+  filter: drop-shadow(0px 10px 20px rgba(180, 180, 180, 0.25))
+}
+.react-calendar__month-view__days__day--weekend {
+  color: inherit !important;
+}

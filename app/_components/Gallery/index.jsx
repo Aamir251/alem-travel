@@ -21,30 +21,30 @@ export default function Gallery() {
 
       <div className="grid lg:grid-cols-2 gap-x-7 gap-y-8 mt-10">
         <figure className="relative w-full h-96 lg:h-[480px] rounded-xl overflow-hidden">
-          <Image src={ImageSix} layout="fill" style={{ objectFit: "cover" }} alt="travel with us gallery" />
+          <Image src={ImageSix} layout="fill" style={{ objectFit: "cover" }} className="transition duration-500 hover:scale-110" alt="travel with us gallery" />
         </figure>
         <figure className="relative w-full h-96 lg:h-[480px] rounded-xl overflow-hidden">
-          <Image src={ImageTwo} layout="fill" style={{ objectFit: "cover" }} alt="travel with us gallery" />
+          <Image src={ImageTwo} layout="fill" style={{ objectFit: "cover" }} className="transition duration-500 hover:scale-110" alt="travel with us gallery" />
         </figure>
         <figure className="relative w-full h-96 lg:h-[480px] rounded-xl overflow-hidden">
-          <Image src={ImageOne} layout="fill" style={{ objectFit: "cover" }} alt="travel with us gallery" />
+          <Image src={ImageOne} layout="fill" style={{ objectFit: "cover" }} className="transition duration-500 hover:scale-110" alt="travel with us gallery" />
         </figure>
         
         <figure className="relative w-full h-96 lg:h-[480px] rounded-xl overflow-hidden">
-          <Image src={ImageFive} layout="fill" style={{ objectFit: "cover" }} alt="travel with us gallery" />
+          <Image src={ImageFive} layout="fill" style={{ objectFit: "cover" }} className="transition duration-500 hover:scale-110" alt="travel with us gallery" />
         </figure>
         <figure className="relative w-full h-96 lg:h-[480px] rounded-xl overflow-hidden">
-          <Image src={ImageThree} layout="fill" style={{ objectFit: "cover" }} alt="travel with us gallery" />
+          <Image src={ImageThree} layout="fill" style={{ objectFit: "cover" }} className="transition duration-500 hover:scale-110" alt="travel with us gallery" />
         </figure>
         <figure className="relative w-full h-96 lg:h-[480px] rounded-xl overflow-hidden">
-          <Image src={ImageFour} layout="fill" style={{ objectFit: "cover" }} alt="travel with us gallery" />
+          <Image src={ImageFour} layout="fill" style={{ objectFit: "cover" }} className="transition duration-500 hover:scale-110" alt="travel with us gallery" />
         </figure>
         
 
       </div>
 
       <div className="mt-10 flex-center">
-        <Button variant={"primary"} className={`rounded-md`} >Book Now</Button>
+        <Button className={`rounded-md`} >Book Now</Button>
       </div>
     </Container>
   )

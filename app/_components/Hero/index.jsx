@@ -1,6 +1,5 @@
 
 import Gradient from "./Gradient";
-
 import Buttons from "./Buttons";
 import Container from "@/components/ui/Container";
 
@@ -26,8 +25,8 @@ export default function Hero() {
       
       <h1 className="text-5xl lg:text-7xl xl:text-8xl">Alem Travels</h1>
       <p className="lg:text-lg xl:text-xl">A journey of a thousand miles begins with a single step</p>
+
       <Container className={`flex justify-center`}>
-        
         <Buttons/>
       </Container>
     </section>

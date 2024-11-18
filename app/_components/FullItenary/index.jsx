@@ -17,7 +17,7 @@ export default function FullItenary() {
       <h2 className="text-4xl my-6">BHUTAN RIDE</h2>
 
 
-      <section className="lg:flex justify-between gap-x-10 space-y-10">
+      <section className="lg:flex justify-between gap-x-6 space-y-10">
         <div className="grid lg:grid-cols-2 gap-x-6 gap-y-8">
           <ItenaryCard
             day={'01'}
