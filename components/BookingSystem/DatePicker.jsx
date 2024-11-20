@@ -7,11 +7,12 @@ import 'react-calendar/dist/Calendar.css';
 const DatePicker = ({ onChange, selectedDate }) => {
   return (
     <div>
+      <h5 className="text-lg mb-3 text-center">Choose Date</h5>
       <Calendar
         // activeStartDate={new Date()}
         // onChange={onChange} value={selectedDate} 
         minDate={new Date()}
-        
+        onChange={onChange}
         // minDetail='decade'
         tileDisabled={({ activeStartDate, date, view }) => date < new Date() }
         tileClassName={({ activeStartDate, date, view }) => {

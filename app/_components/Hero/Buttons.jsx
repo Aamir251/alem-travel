@@ -1,15 +1,14 @@
-import Button from "@/components/ui/Button";
+import OpenPopupButton from "@/components/ui/OpenPopupButton";
+import Link from "next/link";
 
 export default function Buttons() {
 
   return (
     <div className="flex gap-x-5 lg:gap-x-8 mt-7">
-      <Button variant={"primary"}>
-        Book Now
-      </Button>
-      <Button variant={'outline'}>
+      <OpenPopupButton />
+      <Link href={"#complete-itenary"} className="btn-outline"  >
         View Intenary
-      </Button>
+      </Link>
     </div>
   )
 }

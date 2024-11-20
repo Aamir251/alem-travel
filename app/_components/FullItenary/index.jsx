@@ -2,7 +2,7 @@ import Container from "@/components/ui/Container";
 import Image from "next/image";
 import BikeLogo from "@/assets/bike-logo.png"
 import ItenaryCard from "./ItenaryCard";
-import BookingSystem from "../BookingSystem";
+import BookingSystem from "@/components/BookingSystem";
 
 
 export default function FullItenary() {
@@ -11,13 +11,13 @@ export default function FullItenary() {
 
       <Image src={BikeLogo}
         className="mx-auto lg:ml-0"
-        alt="alem travel logo" width={110} height={120} style={{ objectFit: "contain" }} 
+        alt="alem travel logo" width={110} height={120} style={{ objectFit: "contain" }}
       />
 
       <h2 className="text-4xl my-6">BHUTAN RIDE</h2>
 
 
-      <section className="lg:flex justify-between gap-x-6 space-y-10">
+      <section id="complete-itenary" className="lg:flex justify-between gap-x-6 space-y-10">
         <div className="grid lg:grid-cols-2 gap-x-6 gap-y-8">
           <ItenaryCard
             day={'01'}
@@ -59,7 +59,9 @@ export default function FullItenary() {
         </div>
 
 
-        <BookingSystem />
+        <div className="drop-shadow-primary px-5 py-7 bg-white h-max w-full min-w-[360px] space-y-5 text-center">
+          <BookingSystem />
+        </div>
 
       </section>
     </Container>

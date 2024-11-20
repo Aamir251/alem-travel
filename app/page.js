@@ -1,3 +1,5 @@
+import { Suspense } from "react";
+import BookTourPopup from "./_components/BookTourPopup";
 import FullItenary from "./_components/FullItenary";
 import Gallery from "./_components/Gallery";
 import Hero from "./_components/Hero";
@@ -14,6 +16,10 @@ export default function Home() {
       <FullItenary />
 
       <ItenaryCost />
+
+      <Suspense>
+        <BookTourPopup />
+      </Suspense>
     </main>
   )
 }

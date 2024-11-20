@@ -7,7 +7,7 @@ import ImageFour from "@/assets/gallery/four.jpeg"
 import ImageFive from "@/assets/gallery/five.jpeg"
 import ImageSix from "@/assets/gallery/six.jpeg"
 import Container from "@/components/ui/Container";
-import Button from "@/components/ui/Button";
+import OpenPopupButton from "@/components/ui/OpenPopupButton";
 
 
 export default function Gallery() {
@@ -29,7 +29,7 @@ export default function Gallery() {
         <figure className="relative w-full h-96 lg:h-[480px] rounded-xl overflow-hidden">
           <Image src={ImageOne} layout="fill" style={{ objectFit: "cover" }} className="transition duration-500 hover:scale-110" alt="travel with us gallery" />
         </figure>
-        
+
         <figure className="relative w-full h-96 lg:h-[480px] rounded-xl overflow-hidden">
           <Image src={ImageFive} layout="fill" style={{ objectFit: "cover" }} className="transition duration-500 hover:scale-110" alt="travel with us gallery" />
         </figure>
@@ -39,12 +39,12 @@ export default function Gallery() {
         <figure className="relative w-full h-96 lg:h-[480px] rounded-xl overflow-hidden">
           <Image src={ImageFour} layout="fill" style={{ objectFit: "cover" }} className="transition duration-500 hover:scale-110" alt="travel with us gallery" />
         </figure>
-        
+
 
       </div>
 
       <div className="mt-10 flex-center">
-        <Button className={`rounded-md`} >Book Now</Button>
+        <OpenPopupButton />
       </div>
     </Container>
   )
