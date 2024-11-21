@@ -17,7 +17,7 @@ const SliderWrapper = ({
         navigation={true}
         breakpoints={{
           250: {
-            slidesPerView: 1.5,
+            slidesPerView: 1.2,
             spaceBetween: 10
           },
           768: {
