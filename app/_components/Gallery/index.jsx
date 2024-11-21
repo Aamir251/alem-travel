@@ -1,13 +1,16 @@
 import Image from "next/image";
 import BlackLogo from "@/assets/black-logo.png"
-import ImageOne from "@/assets/gallery/one.jpeg"
-import ImageTwo from "@/assets/gallery/two.jpeg"
-import ImageThree from "@/assets/gallery/three.jpeg"
-import ImageFour from "@/assets/gallery/four.jpeg"
-import ImageFive from "@/assets/gallery/five.jpeg"
-import ImageSix from "@/assets/gallery/six.jpeg"
 import Container from "@/components/ui/Container";
-import OpenPopupButton from "@/components/ui/OpenPopupButton";
+
+import "swiper/css";
+import 'swiper/css/navigation';
+
+
+import Dochula from "./Dochula";
+import Paro from "./Paro";
+import { Suspense } from "react";
+import SkeletonLoaderGallery from "@/components/ui/SkeletonLoaderGallery";
+
 
 
 export default function Gallery() {
@@ -19,7 +22,18 @@ export default function Gallery() {
         className="mx-auto translate-x-2"
       />
 
-      <div className="grid lg:grid-cols-2 gap-x-7 gap-y-8 mt-10">
+      <div className="space-y-10">
+
+        <Suspense fallback={SkeletonLoaderGallery}>
+          <Dochula />
+        </Suspense>
+
+        <Suspense fallback={SkeletonLoaderGallery}>
+          <Paro />
+        </Suspense>
+
+      </div>
+      {/* <div className="grid lg:grid-cols-2 gap-x-7 gap-y-8 mt-10">
         <figure className="relative w-full h-96 lg:h-[480px] rounded-xl overflow-hidden">
           <Image src={ImageSix} layout="fill" style={{ objectFit: "cover" }} className="transition duration-500 hover:scale-110" alt="travel with us gallery" />
         </figure>
@@ -41,11 +55,9 @@ export default function Gallery() {
         </figure>
 
 
-      </div>
+      </div> */}
 
-      <div className="mt-10 flex-center">
-        <OpenPopupButton />
-      </div>
+      
     </Container>
   )
 }

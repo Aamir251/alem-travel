@@ -79,3 +79,17 @@ html {
   left : 50% !important;
   transform: translate(-50%, -50%) !important;
 }
+
+.swiper-slide {
+  height: 480px !important;
+}
+.swiper-slide img{
+  height: 100% !important;
+}
+
+@media (max-width : 768px) {
+  .swiper-slide {
+    height: 230px !important;
+  }
+
+}

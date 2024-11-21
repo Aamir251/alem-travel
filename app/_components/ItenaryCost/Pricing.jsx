@@ -3,6 +3,7 @@ import Link from "next/link";
 export default function Pricing() {
   return (
     <div className={`backdrop-blur-sm bg-white/30 text-black w-full max-w-max p-4 lg:p-7 rounded-md mx-auto`}>
+      
       <h4 className={`font-medium text-lg`}>Total Cost: Nu. 62,500/head</h4>
       <p>If Riding with Partner (Couple) Additional Charge of Nu. 10,000 </p>
 
