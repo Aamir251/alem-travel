@@ -1,5 +1,3 @@
-"use server"
-
 import Container from "./Container"
 
 const SkeletonLoaderGallery = () => {

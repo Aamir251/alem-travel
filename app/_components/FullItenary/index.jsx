@@ -2,7 +2,7 @@ import Container from "@/components/ui/Container";
 import Image from "next/image";
 import BikeLogo from "@/assets/bike-logo.png"
 import ItenaryCard from "./ItenaryCard";
-import BookingSystem from "@/components/BookingSystem";
+// import BookingSystem from "@/components/BookingSystem";
 
 
 export default function FullItenary() {
@@ -60,7 +60,7 @@ export default function FullItenary() {
 
 
         <div className="drop-shadow-primary px-5 py-7 bg-white h-max w-full min-w-[360px] space-y-5 text-center">
-          <BookingSystem />
+          {/* <BookingSystem /> */}
         </div>
 
       </section>

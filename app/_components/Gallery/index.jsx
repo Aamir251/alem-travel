@@ -24,11 +24,11 @@ export default function Gallery() {
 
       <div className="space-y-10">
 
-        <Suspense fallback={SkeletonLoaderGallery}>
+        <Suspense fallback={<SkeletonLoaderGallery />}>
           <Dochula />
         </Suspense>
 
-        <Suspense fallback={SkeletonLoaderGallery}>
+        <Suspense fallback={<SkeletonLoaderGallery />}>
           <Paro />
         </Suspense>
 
