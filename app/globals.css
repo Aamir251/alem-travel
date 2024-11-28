@@ -37,6 +37,11 @@ html {
     @apply text-white px-5 lg:px-8 py-2 border border-white font-medium
   }
 
+  .navlink {
+    @apply text-primary font-medium transition duration-300 border border-0 border-b border-transparent  hover:border-primary
+  }
+
+
 }
 
 
@@ -92,4 +97,9 @@ html {
     height: 230px !important;
   }
 
+}
+
+
+.contact-item:hover p{
+  color: #018B7F;
 }

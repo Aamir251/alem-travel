@@ -6,6 +6,14 @@ import Hero from "./_components/Hero";
 import ItenaryCost from "./_components/ItenaryCost";
 import ItenaryOverview from "./_components/ItenaryOverview";
 
+
+
+export const metadata = {
+  title: 'Alem Travel | Ride with us',
+}
+
+
+
 export default function Home() {
   return (
     <main>
