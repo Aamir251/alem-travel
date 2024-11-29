@@ -8,23 +8,23 @@ const SITE_MAIL_RECIEVER = process.env.SITE_MAIL_RECIEVER;
 
 export async function POST(request) {
 
-  const formData = await request.formData();
-
-
   try {
-    const fullName = formData.get("full-name")
-    const email = formData.get("email")
-    const phoneNumber = formData.get("phone-number")
 
-    const bookingDate = formatDate(formData.get("booking-date"));
-    
-    
+
+    const body = await request.json();
+
+    console.log("body ", body)
+
+
+    const { email, fullName, phoneNumber, bookingDate } = body;
+
+
     const resp = await sendMail({
       text : `
         Full Name : ${fullName},
         Email : ${email},
         Phone Number : ${phoneNumber},
-        Booking Date : ${bookingDate}
+        Booking Date : ${formatDate(bookingDate)}
       `
     })
 
@@ -34,21 +34,21 @@ export async function POST(request) {
         success : true,
         error : false
       })
-   
+
 
     } else {
       throw new Error("Could Not Process Request")
     }
 
   } catch (error) {
-    
+
     return Response.json({
-      success : false,
-      error : error.message
+      success: false,
+      error: error.message
     })
   }
 
-  
+
 
 }
 

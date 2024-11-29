@@ -21,9 +21,23 @@ const Form = ({ selectedDate, showSuccessMessage }) => {
       
       const formData = new FormData(form)
 
+
+      console.log(JSON.stringify({
+        fullName : formData.get("full-name"),
+        email : formData.get("email"),
+        phoneNumber : formData.get("phone-number"),
+        bookingDate : formData.get("booking-date")
+      }));
+      
+
       const resp = await fetch("https://alem-travel.vercel.app/api/book-tour", {
         method : "POST",
-        body : formData
+        body : JSON.stringify({
+          fullName : formData.get("full-name"),
+          email : formData.get("email"),
+          phoneNumber : formData.get("phone-number"),
+          bookingDate : formData.get("booking-date")
+        })
       })
 
       console.log({ resp });
@@ -32,8 +46,6 @@ const Form = ({ selectedDate, showSuccessMessage }) => {
 
       console.log({ data });
       
-
-      // const { error, success } =  await bookingAction(formData)
 
       if (!data.sucess) {
         alert("Failed to Submit")
