@@ -33,8 +33,8 @@ const SliderWrapper = ({
             <SwiperSlide key={`${placeName}-${index}`} className="overflow-hidden rounded-lg">
               <Image
                 // layout="fill"
-                width={620}
-                height={530}
+                width={"auto"}
+                height={"auto"}
                 src={image}
                 alt={placeName}
                 className="transition duration-500 hover:scale-105"

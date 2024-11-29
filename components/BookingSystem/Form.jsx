@@ -1,31 +1,58 @@
 "use client";
 
 import { useState } from "react";
-import { bookingAction } from "./action";
 import SubmitButton from "./SubmitButton";
 
 
 
 const Form = ({ selectedDate, showSuccessMessage }) => {
 
-  const [ isSuccess, setIsSuccess ] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
 
-  const formAction = async (formData) => {
-    
-    const { error, success } =  await bookingAction(formData)
+  const handleSubmit = async (e) => {
 
-    if (error) {
-      alert("Failed to Submit")
-      return
+    e.preventDefault()
+
+    try {
+      setIsLoading(true)
+      const form = e.target;
+
+      console.log({ form });
+      
+      const formData = new FormData(form)
+
+      const resp = await fetch("https://alem-travel.vercel.app/api/book-tour", {
+        method : "POST",
+        body : formData
+      })
+
+      console.log({ resp });
+      
+      const data = await resp.json()
+
+      console.log({ data });
+      
+
+      // const { error, success } =  await bookingAction(formData)
+
+      if (!data.sucess) {
+        alert("Failed to Submit")
+        return
+      }
+
+      // successful submission
+
+      showSuccessMessage()
+    } catch (error) {
+      console.log({ error });
+      
+    } finally {
+      setIsLoading(false)
     }
-
-    // successful submission
-
-    showSuccessMessage()
   }
   return (
     <>
-      <form className="text-left space-y-4" action={formAction}>
+      <form className="text-left space-y-4" onSubmit={handleSubmit}>
 
         <div className="space-y-1.5">
           <label htmlFor="full-name">Full Name</label>
@@ -40,7 +67,7 @@ const Form = ({ selectedDate, showSuccessMessage }) => {
           <label htmlFor="email">Email</label>
           <input
             name="email"
-            placeholder="Full Name"
+            placeholder="Email"
             required
           />
         </div>
@@ -49,14 +76,14 @@ const Form = ({ selectedDate, showSuccessMessage }) => {
           <label htmlFor="phone-number">Phone Number</label>
           <input
             name="phone-number"
-            placeholder="Full Name"
+            placeholder="Phone Number"
             required
           />
         </div>
 
         <input type="text" name="booking-date" aria-hidden hidden defaultValue={selectedDate} />
 
-        <SubmitButton />
+        <SubmitButton isLoading={isLoading} />
       </form>
     </>
   )

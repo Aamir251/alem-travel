@@ -1,18 +1,15 @@
 "use client";
 
-import { useFormStatus } from "react-dom"
-const SubmitButton = () => {
-  const { pending } = useFormStatus()
-
+const SubmitButton = ({ isLoading }) => {
 
   return (
     <div>
       <button 
-        disabled={pending} 
-        className={`btn-primary w-full font-federo rounded-md ${pending ? "cursor-wait" : "cursor-pointer"}`} 
+        disabled={isLoading} 
+        className={`btn-primary w-full font-federo rounded-md ${isLoading ? "cursor-wait" : "cursor-pointer"}`} 
         type="submit"
       >
-        {pending ? "Please Wait..." : "Submit"}
+        {isLoading ? "Please Wait..." : "Submit"}
       </button>
     </div>
   )

@@ -4,6 +4,7 @@ import Gallery from "./_components/Gallery";
 import Hero from "./_components/Hero";
 import ItenaryCost from "./_components/ItenaryCost";
 import ItenaryOverview from "./_components/ItenaryOverview";
+import BookTourPopup from "./_components/BookTourPopup";
 
 
 
@@ -24,9 +25,9 @@ export default function Home() {
 
       <ItenaryCost />
 
-      {/* <Suspense>
+      <Suspense>
         <BookTourPopup />
-      </Suspense> */}
+      </Suspense>
     </main>
   )
 }
