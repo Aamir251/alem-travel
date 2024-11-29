@@ -5,9 +5,6 @@ import Container from "@/components/ui/Container";
 import "swiper/css";
 import 'swiper/css/navigation';
 
-
-import Dochula from "./Dochula";
-import Paro from "./Paro";
 import { Suspense } from "react";
 import SkeletonLoaderGallery from "@/components/ui/SkeletonLoaderGallery";
 import AllImages from "./AllImages";

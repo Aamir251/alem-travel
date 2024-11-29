@@ -99,7 +99,9 @@ const AboutUsPage = () => {
 
               </Link>
             </div>
+            
 
+            {/* Column Right */}
             <figure className="relative">
               <Image
                 src={AboutUsImage} alt="alem travel about us image"
@@ -112,9 +114,10 @@ const AboutUsPage = () => {
               <Image
                 src={FounderImage}
                 alt="founder image"
-                width={140}
-                height={140}
-                className="rounded-md absolute top-0 right-0"
+                width={120}
+                height={120}
+                style={{ objectFit : "cover", height : 120, width : 120 }}
+                className="rounded-full absolute top-4 right-1/2 translate-x-1/2"
               />
             </figure>
           </article>

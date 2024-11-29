@@ -1,14 +1,19 @@
 
-import DochulaOne from "@/assets/dochula/one.jpeg"
-import DochulaTwo from "@/assets/dochula/two.jpeg"
-import DochulaThree from "@/assets/dochula/three.jpeg"
-import DochulaFour from "@/assets/dochula/four.jpeg"
-import DochulaFive from "@/assets/dochula/five.jpeg"
+import ImageOne from "@/assets/gallery/one.jpeg"
+import ImageTwo from "@/assets/gallery/two.jpeg"
+import ImageThree from "@/assets/gallery/three.jpeg"
+import ImageFour from "@/assets/gallery/four.jpeg"
+import ImageFive from "@/assets/gallery/five.jpeg"
 
-import ParoOne from "@/assets/paro/one.jpeg"
-import ParoTwo from "@/assets/paro/two.jpeg"
-import ParoThree from "@/assets/paro/three.jpeg"
-import ParoFour from "@/assets/paro/four.jpeg"
+import ImageSix from "@/assets/gallery/six.jpeg"
+import ImageSeven from "@/assets/gallery/seven.jpeg"
+import ImageEight from "@/assets/gallery/eight.jpeg"
+import ImageNine from "@/assets/gallery/nine.jpeg"
+import ImageTen from "@/assets/gallery/ten.jpeg"
+import ImageEleven from "@/assets/gallery/eleven.jpeg"
+import ImageTwelve from "@/assets/gallery/twelve.jpeg"
+import ImageThirteen from "@/assets/gallery/thirteen.jpeg"
+import ImageFourteen from "@/assets/gallery/fourteen.jpeg"
 
 
 
@@ -22,15 +27,20 @@ export default function AllImages() {
       <SliderWrapper
         placeName={""}
         images={[
-          DochulaOne,
-          DochulaTwo,
-          DochulaThree,
-          DochulaFour,
-          DochulaFive,
-          ParoOne,
-          ParoTwo,
-          ParoThree,
-          ParoFour,
+          ImageOne,
+          ImageTwo,
+          ImageThree,
+          ImageFour,
+          ImageFive,
+          ImageSix,
+          ImageSeven,
+          ImageEight,
+          ImageNine,
+          ImageTen,
+          ImageEleven,
+          ImageTwelve,
+          ImageThirteen,
+          ImageFourteen
         ]}
       />
     </div>
