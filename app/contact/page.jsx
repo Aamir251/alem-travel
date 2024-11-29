@@ -4,7 +4,7 @@ import PhoneIcon from "@/assets/phone-icon.svg"
 import EmailIcon from "@/assets/email-icon.svg"
 import WebIcon from "@/assets/web-icon.svg"
 import Image from "next/image"
-import ContactUsImage from "@/assets/contact-us-image.jpeg"
+import LogoWithFlag from "@/assets/logo-with-flag.jpeg"
 
 
 export const metadata = {
@@ -53,7 +53,7 @@ export default function ContactUsPage() {
           </div>
 
           <Image 
-            src={ContactUsImage}
+            src={LogoWithFlag}
             alt="contact us"
             width={280}
             height={280}

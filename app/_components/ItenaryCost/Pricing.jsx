@@ -23,8 +23,8 @@ export default function Pricing() {
       <h5 className={`uppercase mt-5 text-lg font-medium mb-2`}>cost excludes - </h5>
 
       <ul className={`space-y-1 list-disc list-inside ml-1`}>
-        <li>SDF Fees Per Night Rs.1200/adult</li>
-        <li>Travel Insurance Rs.500/person</li>
+        <li>SDF Fees</li>
+        <li>Travel Insurance</li>
         <li>Use of bars and beverages in hotel/bars</li>
         <li>Personal Shopping/Souvenirs</li>
         <li>Tips and Gratuities to guide/driver/trek crew</li>

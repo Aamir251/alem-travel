@@ -1,13 +1,10 @@
 import Image from "next/image"
 import Container from "@/components/ui/Container"
-
 import AboutUsImage from "@/assets/about-us.jpeg"
 import FounderImage from "@/assets/founder.jpeg"
-import InstagramQR from "@/assets/instagram.png";
-
-
-
+import InstagramIcon from "@/assets/instagram-icon.svg"
 import "./_styles.css"
+import Link from "next/link";
 
 
 export const metadata = {
@@ -37,11 +34,11 @@ const AboutUsPage = () => {
               <div className="mt-3 text-grey-one lg:w-10/12 font-federo">
 
 
-                <div style={{ 
-                    backgroundImage : "url('/alem-circle-logo.png')",
-                    backgroundSize : "contain",
-                    backgroundRepeat : "no-repeat",
-                  }} className="space-y-3 mt-5">
+                <div style={{
+                  backgroundImage: "url('/alem-circle-logo.png')",
+                  backgroundSize: "contain",
+                  backgroundRepeat: "no-repeat",
+                }} className="space-y-3 mt-5">
                   <p>
                     Alem Travel, established in 2024, is a travel company registered under the Department of Tourism.
                   </p>
@@ -64,13 +61,19 @@ const AboutUsPage = () => {
                   <h3 className="mt-1">Name: Kuldeep Ghalley</h3>
                   <h6 className="text-sm">Founder of &quot;ALEM Travel&quot;</h6>
 
-                  <Image
-                    src={InstagramQR}
-                    alt="instagram qr"
-                    width={150}
-                    height={150}
-                    className="mx-auto mt-2 lg:ml-0"
-                  />
+                  <Link 
+                    href={"https://www.instagram.com/alembhutantravel/"}
+                    className="w-max hover:opacity-80"
+                    target="_blank"
+                  >
+                    <Image
+                      src={InstagramIcon}
+                      alt="instagram icon"
+                      width={40}
+                      height={40}
+                      className="mx-auto mt-2 lg:ml-0"
+                    />
+                  </Link>
                 </div>
               </div>
             </div>

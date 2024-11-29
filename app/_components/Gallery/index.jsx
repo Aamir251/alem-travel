@@ -1,5 +1,5 @@
 import Image from "next/image";
-import BlackLogo from "@/assets/black-logo.png"
+import LogoWithFlag from "@/assets/logo-with-flag.jpeg"
 import Container from "@/components/ui/Container";
 
 import "swiper/css";
@@ -16,13 +16,14 @@ import SkeletonLoaderGallery from "@/components/ui/SkeletonLoaderGallery";
 export default function Gallery() {
   return (
     <Container className="relative">
-      <Image src={BlackLogo} width={160} height={120}
+      <Image src={LogoWithFlag} width={210} height={210}
         style={{ objectFit: "contain" }}
+        objectFit="contain"
         alt="alem travel gallery"
         className="mx-auto translate-x-2"
       />
 
-      <div className="space-y-10">
+      <div className="space-y-10 mt-14">
 
         <Suspense fallback={<SkeletonLoaderGallery />}>
           <Dochula />
