@@ -86,10 +86,12 @@ html {
 }
 
 .swiper-slide {
-  height: 480px !important;
+  height: 490px !important;
 }
 .swiper-slide img{
   height: 100% !important;
+  object-fit: cover;
+  /* object-position: 0% 7%; */
 }
 
 @media (max-width : 768px) {

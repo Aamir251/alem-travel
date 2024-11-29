@@ -12,12 +12,10 @@ export default function Pricing() {
       <ul className={`space-y-1 list-disc list-inside ml-1`}>
         <li>Bike (Royal Enfield Himalaya bike)</li>
         <li>Back-up vehicle</li>
-        <li>Accommodation in 3* hotel (double sharing in one room.)</li>
+        <li>Food and Accommodation in 3 &#9733; hotel (double sharing in one room.)</li>
         <li>Pick-up and drop from Bagdogra (Indian bus/cab)</li>
         <li>Technician (Mechanic)</li>
         <li>Professional Guide(English & Hindi Speaking)</li>
-        <li>Fooding</li>
-        <li>Mineral Water</li>
       </ul>
 
 
@@ -27,19 +25,15 @@ export default function Pricing() {
       <ul className={`space-y-1 list-disc list-inside ml-1`}>
         <li>SDF Fees Per Night Rs.1200/adult</li>
         <li>Travel Insurance Rs.500/person</li>
-        <li>Entry fees for museum and others</li>
-        <li>Extra bed, if required by client</li>
         <li>Use of bars and beverages in hotel/bars</li>
         <li>Personal Shopping/Souvenirs</li>
-        <li>ISD telephone calls, laundry services and extra orders from the hotel</li>
-
         <li>Tips and Gratuities to guide/driver/trek crew</li>
       </ul>
 
 
       <div className={`mt-2 lg:mt-4 text-yellow-200`}>
         <h6>For Further Inquiries please feel free to contact us</h6>
-        <Link href={`tel:+975-17254444`} >@+975-17254444 (watsapp no)</Link>
+        <Link href={`tel:+97517254444`} className="hover:opacity-70" >@+975-17254444 (Whatsapp No.)</Link>
       </div>
 
 

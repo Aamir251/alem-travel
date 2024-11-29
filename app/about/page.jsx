@@ -1,11 +1,9 @@
 import Image from "next/image"
-import MainLogo from "@/assets/group-logo.png"
 import Container from "@/components/ui/Container"
 
 import AboutUsImage from "@/assets/about-us.jpeg"
 import FounderImage from "@/assets/founder.jpeg"
-import InstagramQR from "@/assets/instagram.jpeg";
-import InstagramIcon from "@/assets/instagram-icon.svg"
+import InstagramQR from "@/assets/instagram.png";
 
 
 
@@ -39,20 +37,24 @@ const AboutUsPage = () => {
               <div className="mt-3 text-grey-one lg:w-10/12 font-federo">
 
 
-                <div className="space-y-3 mt-5">
+                <div style={{ 
+                    backgroundImage : "url('/alem-circle-logo.png')",
+                    backgroundSize : "contain",
+                    backgroundRepeat : "no-repeat",
+                  }} className="space-y-3 mt-5">
                   <p>
-                    Alem Travel, established in 2024, we are a travel company registered under Department of tourism.
+                    Alem Travel, established in 2024, is a travel company registered under the Department of Tourism.
                   </p>
 
 
                   <p>
-                    Our founder Mr. Kuldeep Ghalley who is Bike enthusiast launched the company for all the motorbiker wishing to ride Bhutan. The feeling when you ride in bhutan is no other feeling. You will feel free from the world, you will feel unstoppable, riding with passion and joy.
+                    Our founder Mr. Kuldeep Ghalley who is Bike enthusiast launched the company for all the motorbike riders who want to explore and ride in beautiful country Bhutan. The feeling when you ride in Bhutan is no other feeling that you will experience with the Himalayas all around. You will feel free from the world, you will feel unstoppable, riding with passion and joy.
                   </p>
 
-                  <p>So get ready to explore Bhutan like never before!</p>
+                  <p>So get ready to explore Bhutan like never before.</p>
 
                   <div>
-                    <p>Alem Travel</p>
+                    <p>&quot;Alem Travel&quot;</p>
                     <p>Let the adventure begin!</p>
                   </div>
                 </div>
@@ -67,7 +69,7 @@ const AboutUsPage = () => {
                     alt="instagram qr"
                     width={150}
                     height={150}
-                    className="mx-auto mt-2 lg:ml-0 lg:-translate-x-2"
+                    className="mx-auto mt-2 lg:ml-0"
                   />
                 </div>
               </div>
