@@ -54,28 +54,50 @@ const AboutUsPage = () => {
                     <p>&quot;Alem Travel&quot;</p>
                     <p>Let the adventure begin!</p>
                   </div>
-                </div>
 
-                <div className="mt-5">
-                  <h2 className="text-3xl">Founder</h2>
-                  <h3 className="mt-1">Name: Kuldeep Ghalley</h3>
-                  <h6 className="text-sm">Founder of &quot;ALEM Travel&quot;</h6>
-
-                  <Link 
+                  <Link
                     href={"https://www.instagram.com/alembhutantravel/"}
-                    className="w-max hover:opacity-80"
+                    className=" hover:opacity-80 flex items-center gap-x-1 w-max mx-auto lg:mx-0"
                     target="_blank"
                   >
                     <Image
                       src={InstagramIcon}
                       alt="instagram icon"
-                      width={40}
-                      height={40}
-                      className="mx-auto mt-2 lg:ml-0"
+                      width={35}
+                      height={35}
+                      className=""
                     />
+                    <h5 className="uppercase font-inter text-xs">Follow us on Instagram</h5>
+
                   </Link>
                 </div>
+
+                <div className="mt-10">
+                  <h2 className="text-3xl">Founder</h2>
+                  <h3 className="mt-1">Name: Kuldeep Ghalley</h3>
+                  <h6 className="text-sm">Founder of &quot;ALEM Travel&quot;</h6>
+
+
+                </div>
               </div>
+
+
+
+              <Link
+                href={"https://www.instagram.com/kuldeep_ghalley/"}
+                className=" hover:opacity-80 flex items-center gap-x-1 mt-1"
+                target="_blank"
+              >
+                <Image
+                  src={InstagramIcon}
+                  alt="instagram icon"
+                  width={35}
+                  height={35}
+                  className=""
+                />
+                <h5 className="uppercase font-inter text-xs">Kuldeep Ghalley</h5>
+
+              </Link>
             </div>
 
             <figure className="relative">

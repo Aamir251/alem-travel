@@ -10,6 +10,7 @@ import Dochula from "./Dochula";
 import Paro from "./Paro";
 import { Suspense } from "react";
 import SkeletonLoaderGallery from "@/components/ui/SkeletonLoaderGallery";
+import AllImages from "./AllImages";
 
 
 
@@ -26,12 +27,12 @@ export default function Gallery() {
       <div className="space-y-10 mt-14">
 
         <Suspense fallback={<SkeletonLoaderGallery />}>
-          <Dochula />
+          <AllImages />
         </Suspense>
 
-        <Suspense fallback={<SkeletonLoaderGallery />}>
+        {/* <Suspense fallback={<SkeletonLoaderGallery />}>
           <Paro />
-        </Suspense>
+        </Suspense> */}
 
       </div>
       {/* <div className="grid lg:grid-cols-2 gap-x-7 gap-y-8 mt-10">

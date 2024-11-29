@@ -21,7 +21,7 @@ const SliderWrapper = ({
             spaceBetween: 10
           },
           768: {
-            slidesPerView: 2,
+            slidesPerView: 2.5,
             spaceBetween: 30
           }
         }}

@@ -60,7 +60,7 @@ export default function FullItenary() {
         </div>
 
 
-        <div className="drop-shadow-primary px-5 py-7 bg-white h-max w-full min-w-[360px] space-y-5 text-center">
+        <div className="drop-shadow-primary px-5 py-7 bg-white h-max w-full lg:min-w-[360px] space-y-5 text-center">
           <BookingSystem />
         </div>
 

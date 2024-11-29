@@ -96,7 +96,7 @@ html {
 
 @media (max-width : 768px) {
   .swiper-slide {
-    height: 230px !important;
+    height: 250px !important;
   }
 
 }
