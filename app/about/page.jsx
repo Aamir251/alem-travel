@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Container from "@/components/ui/Container"
-import AboutUsImage from "@/assets/about-us.jpeg"
+import AboutUsImage from "@/assets/about-us.webp"
 import FounderImage from "@/assets/founder.jpeg"
 import InstagramIcon from "@/assets/instagram-icon.svg"
 import "./_styles.css"

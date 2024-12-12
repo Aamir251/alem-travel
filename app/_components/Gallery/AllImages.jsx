@@ -1,19 +1,19 @@
 
-import ImageOne from "@/assets/gallery/one.jpeg"
-import ImageTwo from "@/assets/gallery/two.jpeg"
-import ImageThree from "@/assets/gallery/three.jpeg"
-import ImageFour from "@/assets/gallery/four.jpeg"
-import ImageFive from "@/assets/gallery/five.jpeg"
+import ImageOne from "@/assets/gallery/one.webp"
+import ImageTwo from "@/assets/gallery/two.webp"
+import ImageThree from "@/assets/gallery/three.webp"
+import ImageFour from "@/assets/gallery/four.webp"
+import ImageFive from "@/assets/gallery/five.webp"
 
-import ImageSix from "@/assets/gallery/six.jpeg"
-import ImageSeven from "@/assets/gallery/seven.jpeg"
-import ImageEight from "@/assets/gallery/eight.jpeg"
-import ImageNine from "@/assets/gallery/nine.jpeg"
-import ImageTen from "@/assets/gallery/ten.jpeg"
-import ImageEleven from "@/assets/gallery/eleven.jpeg"
-import ImageTwelve from "@/assets/gallery/twelve.jpeg"
-import ImageThirteen from "@/assets/gallery/thirteen.jpeg"
-import ImageFourteen from "@/assets/gallery/fourteen.jpeg"
+import ImageSix from "@/assets/gallery/six.webp"
+import ImageSeven from "@/assets/gallery/seven.webp"
+import ImageEight from "@/assets/gallery/eight.webp"
+import ImageNine from "@/assets/gallery/nine.webp"
+import ImageTen from "@/assets/gallery/ten.webp"
+import ImageEleven from "@/assets/gallery/eleven.webp"
+import ImageTwelve from "@/assets/gallery/twelve.webp"
+import ImageThirteen from "@/assets/gallery/thirteen.webp"
+import ImageFourteen from "@/assets/gallery/fourteen.webp"
 
 
 
